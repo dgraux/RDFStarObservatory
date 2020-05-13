@@ -8,7 +8,37 @@ Description
 
 ### Context: RDF\* &amp; SPARQL\*
 
-Recently, Hartig _et al._ proposed [RDF\*](https://arxiv.org/pdf/1406.3399.pdf): a syntax to express statements of statements for [RDF](https://www.w3.org/TR/rdf11-primer/) data without involving tedious reification methods. Furthermore, following this RDF extension, they also suggested an [extension](http://www.diva-portal.org/smash/get/diva2:1141963/FULLTEXT01.pdf) based on [SPARQL](https://www.w3.org/TR/sparql11-query/) for querying these new datasets.
+Recently, Hartig and Thompson proposed [RDF\*](https://arxiv.org/pdf/1406.3399.pdf): a syntax
+to express statements of statements for [RDF](https://www.w3.org/TR/rdf11-primer/) data
+without involving tedious reification methods. Furthermore, following this RDF extension, they
+also suggested an [extension](http://www.diva-portal.org/smash/get/diva2:1141963/FULLTEXT01.pdf)
+based on [SPARQL](https://www.w3.org/TR/sparql11-query/) for querying these new datasets.
+Recently, Hartig shared an [extension](https://blog.liu.se/olafhartig/documents/sparql-update/)
+for the SPARQL UPDATE fragment.
+
+### Announces and achievements from the community
+
+Driven by the propositions from Hartig and Thompson, multiple efforts have been realized by the
+Semantic Web community so far:
+
+1. First of all, Hartig developed [a set of tools](https://github.com/RDFstar/RDFstarTools)
+based on top of Jena.
+2. [Blazegraph](https://github.com/blazegraph/database/wiki/Reification_Done_Right).
+3. [AnzoGraph](https://docs.cambridgesemantics.com/anzograph/userdoc/lpgs.htm).
+4. In December 2019, [Stardog](https://www.stardog.com/blog/property-graphs-meet-stardog/).
+5. [GraphDB](http://graphdb.ontotext.com/documentation/9.2/free/devhub/rdf-sparql-star.html#id1).
+6. In May 2020, RDF4J (former Sesame) [announced](https://rdf4j.org/documentation/programming/rdfstar/)
+that version 3.2 provides an experimental support.
+
+### Toward an Observatory
+
+As presented above, several popular RDF/SPARQL solutions provide a support for the
+aforementioned extensions. __However__, as there is yet no standard approaches, engines have
+a high degree of freedom. Based on that observation, we wanted to review the current solutions
+developed and shed light on their possible differences. In a nutshell, our goals were: first
+to observe the existing landscape, developping methods and protocols to compare the solutions
+together; and second to discuss the results and share our findings with the hope they would
+help the community.
 
 License
 -------
