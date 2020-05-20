@@ -40,8 +40,8 @@ to observe the existing landscape, developping methods and protocols to compare 
 together; and second to discuss the results and share our findings with the hope they would
 help the community.
 
-As a first study, we designed [a simple experiemental protocol](./CountingStars.md) in order
-to analyze the internal representations that RDF\* compliant engines have.
+As a first study, we designed [a simple experimental protocol](./CountingStars.md) in order
+to investigate the internal representations that RDF\* compliant engines have.
 
 License
 -------
