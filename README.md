@@ -29,6 +29,8 @@ based on top of Jena.
 5. [GraphDB](http://graphdb.ontotext.com/documentation/9.2/free/devhub/rdf-sparql-star.html#id1).
 6. In May 2020, RDF4J (former Sesame) [announced](https://rdf4j.org/documentation/programming/rdfstar/)
 that version 3.2 provides an experimental support.
+7. Two weeks later in May 2020, Apache Jena [released](https://jena.apache.org/documentation/rdfstar/)
+its version 3.15.0 which now supports RDF\*.
 
 ### Toward an Observatory
 
