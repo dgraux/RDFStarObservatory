@@ -58,4 +58,6 @@ Contact
 [Declan O'Sullivan](https://www.tcd.ie/research/profiles/?profile=osulldps)  
 
 Affiliated to the [ADAPT Centre](https://www.adaptcentre.ie/)
-from the [Trinity College Dublin](https://www.tcd.ie/) in Ireland  
+from the [Trinity College Dublin](https://www.tcd.ie/) in Ireland.
+
+Research partially conducted as part of an [EDGE Marie Sklodowska-Curie](https://edge-research.eu/) fellowship, grant agreement No. 713567.
