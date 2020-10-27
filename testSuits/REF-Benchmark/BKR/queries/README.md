@@ -4,4 +4,4 @@ This folder contains all the SPARQL (and SPARQL*) queries tested on different ve
 * BKR-star: RDFstar
 * BKR-S: Singleton
 
-For the data dumps of the 3 KGs see: https://github.com/badmotor/Reification-Benchmark/tree/master/BKR/data
+For the data dumps of the 3 KGs see: https://github.com/dgraux/RDFStarObservatory/tree/master/testSuits/REF-Benchmark/BKR/data
