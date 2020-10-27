@@ -1,0 +1,11 @@
+##BKR-star dataset, Query B-Q3
+##
+PREFIX bkr_meta:<http://mor.nlm.nih.gov/bkr/META_> 
+PREFIX bkr_sn:<http://mor.nlm.nih.gov/bkr/SEMNET_> 
+PREFIX provenir:<http://knoesis.wright.edu/provenir/> 
+PREFIX pubmed:<http://mor.nlm.nih.gov/bkr/PUBMED_>  
+SELECT ?o1 ?o2 ?pmid2 ?o3 ?pmid3  WHERE { 
+<< bkr_meta:C0543467-INST bkr_sn:TREATS ?o1 >> provenir:derives_from pubmed:10979521-INST . 
+<< ?o1 bkr_sn:CAUSES ?o2 >> provenir:derives_from ?pmid2 . 
+<< ?o2 bkr_sn:AFFECTS ?o3 >> provenir:derives_from ?pmid3 .
+}

@@ -1,0 +1,20 @@
+##BKR-R dataset, Query A-Q2
+##
+PREFIX bkr: <http://mor.nlm.nih.gov/bkr/> 
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX provenir: <http://knoesis.wright.edu/provenir/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX umls: <http://mor.nlm.nih.gov/umls/> 
+PREFIX meta: <http://mor.nlm.nih.gov/umls/META_> 
+PREFIX sn: <http://mor.nlm.nih.gov/umls/SEMNET_> 
+PREFIX pubmed: <http://mor.nlm.nih.gov/bkr/PUBMED_> 
+PREFIX bkr_sn: <http://mor.nlm.nih.gov/bkr/SEMNET_> 
+PREFIX bkr_meta: <http://mor.nlm.nih.gov/bkr/META_>  
+select ?pmid1 where {  
+?st1 rdf:type rdf:Statement .  
+?st1 rdf:subject bkr_meta:C0543467-INST .  
+?st1 rdf:predicate bkr_sn:TREATS . 
+?st1 rdf:object bkr_meta:C0178292-INST . 
+?st1 provenir:derives_from ?pmid1 .
+}

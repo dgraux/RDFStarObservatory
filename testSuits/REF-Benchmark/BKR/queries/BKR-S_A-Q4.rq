@@ -1,0 +1,18 @@
+##BKR-S dataset, Query A-Q4
+##
+## Not comparable with BKR-R and BKR-star! Similar shape, different results. ##
+PREFIX bkr: <http://mor.nlm.nih.gov/bkr/> 
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX provenir: <http://knoesis.wright.edu/provenir/> 
+PREFIX umls: <http://mor.nlm.nih.gov/umls/> 
+PREFIX meta: <http://mor.nlm.nih.gov/umls/META_> 
+PREFIX sn: <http://mor.nlm.nih.gov/umls/SEMNET_> 
+PREFIX pubmed: <http://mor.nlm.nih.gov/bkr/PUBMED_> 
+PREFIX bkr_sn: <http://mor.nlm.nih.gov/bkr/SEMNET_> 
+PREFIX bkr_meta: <http://mor.nlm.nih.gov/bkr/META_> 
+SELECT (count(?source_inst) as ?c) where {  
+bkr_meta:C0543467-INST ?st_p_inst ?o . 
+?st_p_inst rdf:singletonPropertyOf bkr_sn:TREATS . 
+?st_p_inst provenir:derives_from ?source_inst . 
+FILTER(regex(str(?source_inst),'PUBMED'))
+}

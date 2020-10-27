@@ -1,0 +1,11 @@
+##BKR-S dataset, Query B-Q1
+##
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX bkr: <http://mor.nlm.nih.gov/bkr/> 
+PREFIX provenir: <http://knoesis.wright.edu/provenir/> 
+PREFIX pubmed: <http://mor.nlm.nih.gov/bkr/PUBMED_>  
+select ?s ?p ?o where { 
+?s ?sp1 ?o . 
+?sp1 rdf:singletonPropertyOf ?p . 
+?sp1 provenir:derives_from pubmed:10979521-INST .
+}

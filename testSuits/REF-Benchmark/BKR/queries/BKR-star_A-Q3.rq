@@ -1,0 +1,18 @@
+##BKR-star dataset, Query A-Q3
+##
+PREFIX bkr: <http://mor.nlm.nih.gov/bkr/> 
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX provenir: <http://knoesis.wright.edu/provenir/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX umls: <http://mor.nlm.nih.gov/umls/> 
+PREFIX meta: <http://mor.nlm.nih.gov/umls/META_> 
+PREFIX sn: <http://mor.nlm.nih.gov/umls/SEMNET_> 
+PREFIX pubmed: <http://mor.nlm.nih.gov/bkr/PUBMED_> 
+PREFIX bkr_sn: <http://mor.nlm.nih.gov/bkr/SEMNET_> 
+PREFIX bkr_meta: <http://mor.nlm.nih.gov/bkr/META_>  
+select ?source_cl (count(?source_cl) as ?c) where { 
+<<bkr_meta:C0543467-INST bkr_sn:TREATS ?o>> provenir:derives_from ?source_inst . 
+?source_inst rdf:type ?source_cl .
+} 
+group by ?source_cl

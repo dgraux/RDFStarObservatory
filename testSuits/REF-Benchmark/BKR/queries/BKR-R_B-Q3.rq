@@ -1,0 +1,23 @@
+##BKR-R dataset, Query B-Q3
+##
+PREFIX bkr_meta:<http://mor.nlm.nih.gov/bkr/META_> 
+PREFIX bkr_sn:<http://mor.nlm.nih.gov/bkr/SEMNET_> 
+PREFIX provenir:<http://knoesis.wright.edu/provenir/> 
+PREFIX pubmed:<http://mor.nlm.nih.gov/bkr/PUBMED_> 
+SELECT ?o1 ?o2 ?pmid2 ?o3 ?pmid3  WHERE { 
+?st1 rdf:type rdf:Statement . 
+?st1 rdf:subject bkr_meta:C0543467-INST . 
+?st1 rdf:predicate bkr_sn:TREATS . 
+?st1 rdf:object ?o1 . 
+?st1 provenir:derives_from pubmed:10979521-INST . 
+?st2 rdf:type rdf:Statement . 
+?st2 rdf:subject ?o1 . 
+?st2 rdf:predicate bkr_sn:CAUSES . 
+?st2 rdf:object ?o2 . 
+?st2 provenir:derives_from ?pmid2. 
+?st3 rdf:type rdf:Statement . 
+?st3 rdf:subject ?o2 . 
+?st3 rdf:predicate bkr_sn:AFFECTS . 
+?st3 rdf:object ?o3 . 
+?st3 provenir:derives_from ?pmid3 . 
+}
