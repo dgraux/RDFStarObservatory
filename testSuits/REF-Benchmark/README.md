@@ -15,7 +15,7 @@ The aim of this resource is to benchmark different RDF modelling solutions for s
 - RDF* (RDF star). 
 
 Datasets used for the experiments:
-* Biomedical Knowledge Repository (BKR), see [./BKR/](https://github.com/badmotor/Reification-Benchmark/tree/master/BKR) 
+* Biomedical Knowledge Repository (BKR), see [./BKR/](https://github.com/dgraux/RDFStarObservatory/tree/master/testSuits/REF-Benchmark/BKR/) 
 
 License
 -------
